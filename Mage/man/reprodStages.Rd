@@ -5,8 +5,8 @@
 \title{Group the stages of a matrix model into propagule, pre-reproductive,
 reproductive and post-reproductive stages.}
 \usage{
-reprodStages(matF, matFmu, post, maxRep, matrixStages, includeProp = TRUE,
-  includePost = TRUE)
+reprodStages(matF, matFmu, post, maxRep, matrixStages,
+  includeProp = TRUE, includePost = TRUE)
 }
 \arguments{
 \item{matF}{(matrix) fecundity matrix, rearranged so that non-reproductive

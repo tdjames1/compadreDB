@@ -4,20 +4,20 @@
 \alias{dentropy}
 \title{Calculate Demetrius' life table entropy}
 \usage{
-dentropy(matA, lx, fx, cx = F)
+dentropy(matA, lx, mx, cx = F)
 }
 \arguments{
 \item{lx}{A numerical vector of lx (survivorship). This is assumed to be
 with a constant interval (e.g. 1yr).}
 
-\item{fx}{A numerical vector of fx (age-specific sexual reproduction). This
+\item{mx}{A numerical vector of mx (age-specific sexual reproduction). This
 is assumed to be with a constant interval (e.g. 1yr).}
 
 \item{cx}{A numerical vector of cx (age-specific clonal reproduction). This
 is assumed to be with a constant interval (e.g. 1yr).}
 }
 \value{
-Returns an estimate of Demetrius' life table entropy. When both 'fx'
+Returns an estimate of Demetrius' life table entropy. When both 'mx'
 and 'cx' are provided, it outputs Demetrius' entropy for sexual reproduction
 only, for clonal reproduction only, and for both types of reproduction
 together.
