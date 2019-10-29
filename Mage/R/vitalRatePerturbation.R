@@ -1,32 +1,32 @@
 #' A function to perform perturbation of vital rates of the matrix model
-#' 
+#'
 #' A function to perform perturbation of vital rates of the matrix model
-#' 
-#' %% ~~ If necessary, more details than the description above ~~
-#' 
-#' @param matU %% ~~Describe \code{matU} here~~
-#' @param matF %% ~~Describe \code{matF} here~~
-#' @param matC %% ~~Describe \code{matC} here~~
-#' @param pert %% ~~Describe \code{pert} here~~
-#' @return %% ~Describe the value returned 
-#' @note %% ~~further notes~~
+#'
+#' ## ~~ If necessary, more details than the description above ~~
+#'
+#' @param matU ## ~~Describe \code{matU} here~~
+#' @param matF ## ~~Describe \code{matF} here~~
+#' @param matC ## ~~Describe \code{matC} here~~
+#' @param pert ## ~~Describe \code{pert} here~~
+#' @return ## ~Describe the value returned
+#' @note ## ~~further notes~~
 #' @author Roberto Salguero-Gomez <r.salguero@@sheffield.ac.uk>
-#' @seealso %% ~~objects to See Also as \code{\link{help}}, ~~~
-#' @references %% ~put references to the literature/web site here ~
+#' @seealso ## ~~objects to See Also as \code{\link{help}}, ~~~
+#' @references ## ~put references to the literature/web site here ~
 #' @keywords ~kwd1 ~kwd2
 #' @examples
-#' 
+#'
 #' ##---- Should be DIRECTLY executable !! ----
 #' ##-- ==>  Define data, use random,
 #' ##--	or do  help(data=index)  for the standard data sets.
-#' 
+#'
 #' ## The function is currently defined as
-#' 
-#' 
+#'
+#'
 #' @export vitalRatePerturbation
 vitalRatePerturbation <- function(matU, matF, matC=NULL,pert=0.001){
   #Function to calculate vital rate level sensitivities and elasticities
-  
+
   matA=matU+matF+matC
   aDim=dim(matA)[1]
   fakeA=matA
@@ -60,14 +60,14 @@ vitalRatePerturbation <- function(matU, matF, matC=NULL,pert=0.001){
     uIndep=matrix(NA,aDim,aDim)
     u=colSums(matU)
     for (j in which(u>0)) uIndep[,j]=matA[,j]/u[j]
-   	
+
    	sensSigmaA=uIndep*sensA
-    
+
     #Little fix for semelparous species
       uPrime=u
       #uPrime[u==0]=0.001
     elasSigmaA=t(t(sensSigmaA)*uPrime)/lambda
-    
+
   	elasA=sensA*matA/lambda
 
   #Extracting survival vital rate
@@ -81,7 +81,7 @@ vitalRatePerturbation <- function(matU, matF, matC=NULL,pert=0.001){
     c=colSums(matC)
     cDistrib=matrix(0,ncol=aDim,nrow=aDim)
     for (j in which(c>0)) cDistrib[,j]=matC[,j]/c[j]
-    
+
 
   SuDistrib=sensA*uDistrib
   SfDistrib=sensA*fDistrib
@@ -90,7 +90,7 @@ vitalRatePerturbation <- function(matU, matF, matC=NULL,pert=0.001){
 
 out = data.frame("SSurvival"=NA,"SGrowth"=NA,"SShrinkage"=NA,"SReproduction"=NA,"SClonality"=NA,
                   "ESurvival"=NA,"EGrowth"=NA,"EShrinkage"=NA,"EReproduction"=NA,"EClonality"=NA)
-  
+
 
   #Still to be done
   out$SSurvival=sum(sensSigmaA,na.rm=T)
@@ -109,5 +109,5 @@ out = data.frame("SSurvival"=NA,"SGrowth"=NA,"SShrinkage"=NA,"SReproduction"=NA,
   out$EReproduction=sum(EfDistrib*propF,na.rm=T)
   out$EClonality=sum(EcDistrib*propC,na.rm=T)
 
- return(out) 
+ return(out)
 }

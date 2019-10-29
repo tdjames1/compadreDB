@@ -7,25 +7,25 @@
 vitalRatePerturbation(matU, matF, matC = NULL, pert = 0.001)
 }
 \arguments{
-\item{matU}{%% ~~Describe \code{matU} here~~}
+\item{matU}{## ~~Describe \code{matU} here~~}
 
-\item{matF}{%% ~~Describe \code{matF} here~~}
+\item{matF}{## ~~Describe \code{matF} here~~}
 
-\item{matC}{%% ~~Describe \code{matC} here~~}
+\item{matC}{## ~~Describe \code{matC} here~~}
 
-\item{pert}{%% ~~Describe \code{pert} here~~}
+\item{pert}{## ~~Describe \code{pert} here~~}
 }
 \value{
-%% ~Describe the value returned
+## ~Describe the value returned
 }
 \description{
 A function to perform perturbation of vital rates of the matrix model
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -38,10 +38,10 @@ A function to perform perturbation of vital rates of the matrix model
 
 }
 \references{
-%% ~put references to the literature/web site here ~
+## ~put references to the literature/web site here ~
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Roberto Salguero-Gomez <r.salguero@sheffield.ac.uk>

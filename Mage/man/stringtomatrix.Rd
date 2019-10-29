@@ -16,7 +16,7 @@ A `matrix`.
 The function converts a matrix from the character string format to class matrix.
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \examples{
 

@@ -15,13 +15,13 @@ dbCompare(db1, db2, verbose = FALSE)
 of detail.}
 }
 \value{
-%% ~Describe the value returned %% If it is a LIST, use %%
+## ~Describe the value returned ## If it is a LIST, use ##
 }
 \description{
 A function to compare two COMPADRE/COMADRE database versions
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \examples{
 \dontrun{

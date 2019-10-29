@@ -37,7 +37,7 @@ This function applies Markov chain approaches to obtain mean life
 expectancy, and a loop to calculate maximum longevity.
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -54,7 +54,7 @@ Analysis, and Interpretation. Sinauer Associates; 2nd edition. ISBN:
 Doak & Morris (2002) BOOK INSERT CITATION
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Roberto Salguero-Gomez <rob.salguero@zoo.ox.ac.uk>

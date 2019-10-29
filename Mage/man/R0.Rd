@@ -28,10 +28,10 @@ This function calculates net reproductive value from a matU
 matC (clonal reproduction.
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -49,7 +49,7 @@ Analysis, and Interpretation. Sinauer Associates; 2nd edition. ISBN:
 978-0878930968
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Roberto Salguero-Gómez <rob.salguero@zoo.ox.ac.uk>

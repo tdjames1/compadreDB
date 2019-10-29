@@ -64,7 +64,7 @@ various ways of weighted means and organization of stages along the life
 cycle represented in the matrix population model.
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -98,7 +98,7 @@ Analysis, and Interpretation. Sinauer Associates; 2nd edition. ISBN:
 978-0878930968
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Roberto Salguero-Gomez <rob.salguero@zoo.ox.ac.uk>

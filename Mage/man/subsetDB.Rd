@@ -22,10 +22,10 @@ This function allows users to subset the COMPADRE/COMADRE database by
 logical argument.
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -38,10 +38,10 @@ ssData <- subsetDB(comadre, SurvivalIssue < 1 & Altitude > 1000 & Altitude < 150
 
 }
 \references{
-%% references
+## references
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Owen R. Jones <jones@biology.sdu.dk>

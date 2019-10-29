@@ -28,10 +28,10 @@ This function calculates Demetrius' life table entropy from an lx
 (age-specific clonality) vector with even intervals.
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -49,7 +49,7 @@ L. Demetrius. 1978. Adaptive value, entropy and survivorship
 curves. Nature 275, 213 - 214. doi:10.1038/275213a0
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Roberto Salguero-Gómez <rob.salguero@zoo.ox.ac.uk>

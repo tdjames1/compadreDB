@@ -31,10 +31,10 @@ processes the matrix model and passes the information to the graphViz
 functionality of DiagrammeR. See http://rich-iannone.github.io/DiagrammeR/.
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -42,15 +42,15 @@ functionality of DiagrammeR. See http://rich-iannone.github.io/DiagrammeR/.
 M1 <- matrix(c(0.00, 0.69, 0.00, 0.10, 0.00, 0.88, 0.35, 0.00, 0.79),nrow=3)
 colnames(M1) <- 1:3
 plotLifeCycle(M1)
-} 
+}
 
 
 }
 \references{
-%% ~~references~~
+## ~~references~~
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Owen R. Jones <jones@biology.sdu.dk>

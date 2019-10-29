@@ -42,7 +42,7 @@ A detailed description of these methods can be found in section 5.3 of
 Caswell (2001) and the supplementary information of Jones et al. (2014).
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -66,7 +66,7 @@ Jones, O.R. et al. (2014) Diversity of ageing across the tree of life.
 Nature, 505(7482), 169–173
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Roberto Salguero-Gómez <rob.salguero@sheffield.ac.uk>

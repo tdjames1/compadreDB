@@ -22,10 +22,10 @@ This function calculates Keyfitz' life table entropy from an lx
 (surivorship) vector with even intervals.
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \note{
-%% ~~further notes~~
+## ~~further notes~~
 }
 \examples{
 
@@ -43,10 +43,10 @@ kentropy(lx,trapeze=FALSE)
 
 }
 \references{
-%% ~~references~~
+## ~~references~~
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Owen R. Jones <jones@biology.sdu.dk>

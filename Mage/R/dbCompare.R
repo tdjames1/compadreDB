@@ -1,41 +1,41 @@
 #' A function to compare two COMPADRE/COMADRE database versions
-#' 
+#'
 #' A function to compare two COMPADRE/COMADRE database versions
-#' 
-#' %% ~~ If necessary, more details than the description above ~~
-#' 
+#'
+#' ## ~~ If necessary, more details than the description above ~~
+#'
 #' @param db1 The name of the first database object in the comparison.
 #' @param db2 The name of the second database object in the comparison.
 #' @param verbose A logical argument indicating whether or not to return lots
 #' of detail.
-#' @return %% ~Describe the value returned %% If it is a LIST, use %%
+#' @return ## ~Describe the value returned ## If it is a LIST, use ##
 #' @author Owen R. Jones <jones@@biology.sdu.dk>
 #' @keywords manip attribute
 #' @examples
 #' \dontrun{
 #' 	dbCompare(comadreSubset,comadre,verbose = TRUE)
 #' }
-#' 
+#'
 #' @export dbCompare
-dbCompare <- function(db1, db2, verbose = FALSE){ 
+dbCompare <- function(db1, db2, verbose = FALSE){
 
 #Quick summary
 cat("Quick Summary\n")
 
 #File 1
-uniqueSource1 <- unique(paste(db1$metadata$Authors," (",db1$metadata$YearPublication,") ",db1$metadata$Journal,sep=""))                      
+uniqueSource1 <- unique(paste(db1$metadata$Authors," (",db1$metadata$YearPublication,") ",db1$metadata$Journal,sep=""))
 db1$metadata$binomial <- paste(db1$metadata$GenusAccepted,db1$metadata$SpeciesEpithetAccepted,sep = " ")
 
-cat(paste("File-1 contains the demographic and associated data from ", 
+cat(paste("File-1 contains the demographic and associated data from ",
        length(uniqueSource1), " source papers, corresponding to ",
        length(unique(db1$metadata$binomial))," accepted species, and ",
        nrow(db1$metadata), " matrices.\n\n",sep=""))
 
 #File 2
-uniqueSource2 <- unique(paste(db2$metadata$Authors," (",db2$metadata$YearPublication,") ",db2$metadata$Journal,sep=""))                      
+uniqueSource2 <- unique(paste(db2$metadata$Authors," (",db2$metadata$YearPublication,") ",db2$metadata$Journal,sep=""))
 db2$metadata$binomial <- paste(db2$metadata$GenusAccepted,db2$metadata$SpeciesEpithetAccepted,sep = " ")
 
-cat(paste("File-2 contains the demographic and associated data for ", 
+cat(paste("File-2 contains the demographic and associated data for ",
       length(uniqueSource2), " source papers, corresponding to ",
       length(unique(db2$metadata$binomial))," accepted species, and ",
       nrow(db2$metadata), " matrices.\n\n",sep=""))

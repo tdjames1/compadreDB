@@ -23,7 +23,7 @@ The function converts from the list structured database object to a flat
 sheet by converting each matrix to a string.
 }
 \details{
-%% ~~ If necessary, more details than the description above ~~
+## ~~ If necessary, more details than the description above ~~
 }
 \examples{
 
@@ -33,7 +33,7 @@ newDB<-convert2flat(compadre,Aonly=FALSE)
 
 }
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+## ~~objects to See Also as \code{\link{help}}, ~~~
 }
 \author{
 Owen R. Jones <jones@biology.sdu.dk>
